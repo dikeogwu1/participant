@@ -101,6 +101,7 @@ img {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 /* dashboard */
@@ -127,4 +128,6 @@ span,
 a {
   margin-left: 0.5rem;
   font-weight: 400;
+  color: var(--p-blue);
+  word-wrap: break-word;
 }
