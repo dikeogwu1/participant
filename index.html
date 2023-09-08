@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HNGx | Participant dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="dashboard">
+        <!--dashboard header -->
+        <header>
+          <h1 data-testid="slackUserName">Fabain Ikem</h1>
+          <img
+            class="dashboard_profilePic"
+            title="Fabain Ikem"
+            src="https://res.cloudinary.com/dikeogwu1/image/upload/v1694108058/portfolio%20images/20230207_133556_sov5xk.jpg"
+            alt="Fabain Ikem"
+            data-testid="slackDisplayImage"
+          />
+        </header>
+        <!-- dashboard body -->
+        <ul class="dashboard_body">
+          <li>
+            <data data-testid="currentDayOfTheWeek" value="date"
+              >Current Day of the Week: <span>Monday</span></data
+            >
+          </li>
+
+          <li>
+            <time data-testid="currentUTCTime" value="time"
+              >Current UTC Time: <span>1630972800000</span></time
+            >
+          </li>
+
+          <li>
+            <data data-testid="myTrack" value="track"
+              >Track: <span>Frontend</span></data
+            >
+          </li>
+
+          <li>
+            <data data-testid="githubURL">
+              GitHub URL:
+              <a target="_blank" href="https://github.com/dikeogwu1/participant"
+                >https://github.com/yourusername/participant
+              </a></data
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
