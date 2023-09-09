@@ -14,4 +14,10 @@ const days = [
 // Insert current day
 currentDay.textContent = days[new Date().getDay()];
 // Insert UTC time
-currentUTCTime.textContent = Date.now();
+const updateTime = () => {
+  currentUTCTime.textContent = Date.now();
+};
+
+setInterval(() => {
+  updateTime();
+}, 1);

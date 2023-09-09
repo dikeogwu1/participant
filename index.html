@@ -8,48 +8,62 @@
   </head>
   <body>
     <main class="container">
-      <div class="dashboard">
-        <!--dashboard header -->
-        <header>
-          <h1 data-testid="slackUserName">Fabain Ikem</h1>
-          <img
-            class="dashboard_profilePic"
-            title="Fabain Ikem"
-            src="https://res.cloudinary.com/dikeogwu1/image/upload/v1694108058/portfolio%20images/20230207_133556_sov5xk.jpg"
-            alt="Fabain Ikem"
-            data-testid="slackDisplayImage"
-          />
-        </header>
-        <!-- dashboard body -->
-        <ul class="dashboard_body">
-          <li>
-            <data data-testid="currentDayOfTheWeek" value="date"
-              >Current Day of the Week: <span class="currentDay"></span
-            ></data>
-          </li>
+      <!-- Personal data attributes -->
+      <table class="dashboard">
+        <caption>
+          Real-time data attributes
+        </caption>
+        <!-- Table head -->
+        <thead>
+          <tr>
+            <th>Data attributes</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+          <tr data-testid="slackUserName">
+            <th>Slack Name</th>
+            <td class="myName">Fabain Ikem</td>
+          </tr>
 
-          <li>
-            <time data-testid="currentUTCTime" value="time"
-              >Current UTC Time: <span class="currentUTCTime"></span
-            ></time>
-          </li>
+          <tr data-testid="slackDisplayImage">
+            <th>Slack Display Picture</th>
+            <td>
+              <img
+                class="dashboard_profilePic"
+                title="Fabain Ikem"
+                src="https://res.cloudinary.com/dikeogwu1/image/upload/v1694108058/portfolio%20images/20230207_133556_sov5xk.jpg"
+                alt="Fabain Ikem"
+              />
+            </td>
+          </tr>
 
-          <li>
-            <data data-testid="myTrack" value="track"
-              >Track: <span>Frontend</span></data
-            >
-          </li>
+          <tr data-testid="currentDayOfTheWeek">
+            <th>Current Day of the Week</th>
+            <td class="currentDay"></td>
+          </tr>
 
-          <li>
-            <data data-testid="githubURL">
-              GitHub URL:
+          <tr data-testid="currentUTCTime">
+            <th>Current UTC Time</th>
+            <td class="currentUTCTime"></td>
+          </tr>
+
+          <tr data-testid="myTrack">
+            <th>Track</th>
+            <td>Frontend</td>
+          </tr>
+
+          <tr data-testid="githubURL">
+            <th>GitHub URL</th>
+            <td>
               <a target="_blank" href="https://github.com/dikeogwu1/participant"
-                >https://github.com/yourusername/participant
-              </a></data
-            >
-          </li>
-        </ul>
-      </div>
+                >https://github.com/dikeogwu1/participant
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <script src="app.js"></script>
   </body>

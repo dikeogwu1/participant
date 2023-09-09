@@ -14,6 +14,7 @@
   --p-grey: #333;
   --p-black: #000;
   --p-blue: #007bff;
+  --p-redish: #e72807;
   /* secondary colors */
   --s-white: #f2f2f2;
   /* primary radius */
@@ -31,67 +32,18 @@ body {
   background-color: var(--s-white);
 }
 
-/* Style headings */
-h1,
-h2,
-h3 {
-  font-weight: bold;
-  margin-bottom: 0.75rem;
-  color: var(--p-black);
-  letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-}
-
-h3 {
-  font-size: 1.1rem;
-}
-
-header {
-  text-align: center;
-  background-color: var(--p-blue);
-  padding: 1.25rem;
-  border-radius: var(--p-radius);
-}
-
-/* Style paragraphs and links */
-p {
-  margin-bottom: 1.1rem;
-  color: var(--p-grey);
-}
-
+/* Style links */
 a {
   text-decoration: none;
   color: var(--p-blue);
 }
-
 a:hover {
   text-decoration: underline;
-}
-
-li {
-  font-size: 18px;
 }
 
 img {
   display: block;
   object-fit: cover;
-}
-/* Create a basic button style */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--p-blue);
-  color: var(--p-white);
-  border: none;
-  border-radius: var(--s-radius);
-  cursor: pointer;
 }
 
 /* Style a basic container */
@@ -117,17 +69,29 @@ img {
   border-radius: 50%;
   margin: 0 auto;
 }
-.dashboard_body {
-  padding: 1.75rem;
-}
-.dashboard_body li {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-span,
 a {
-  margin-left: 0.5rem;
   font-weight: 400;
   color: var(--p-blue);
   word-wrap: break-word;
+}
+/* Table */
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid var(--p-grey);
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+td {
+  font-size: 1.25rem;
+}
+thead tr th {
+  color: var(--p-redish);
+}
+.myName {
+  color: var(--p-blue);
+  text-align: center;
+  font-weight: bold;
 }
