@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>HNGx | Participant dashboard</title>
+    <title>HNGx | taskOne</title>
   </head>
   <body>
     <main class="container">
       <div class="dashboard">
         <!--dashboard header -->
         <header>
-          <h1 data-testid="slackUserName">Fabain Ikem</h1>
+          <h1 data-testid="slackUserName">Fabian Ikem</h1>
           <img
             class="dashboard_profilePic"
             title="Fabain Ikem"
@@ -22,32 +22,18 @@
         </header>
         <!-- dashboard body -->
         <ul class="dashboard_body">
-          <li>
-            <data data-testid="currentDayOfTheWeek" value="date"
-              >Current Day of the Week: <span class="currentDay"></span
-            ></data>
-          </li>
+          <li data data-testid="currentDayOfTheWeek" class="currentDay"></li>
 
-          <li>
-            <time data-testid="currentUTCTime" value="time"
-              >Current UTC Time: <span class="currentUTCTime"></span
-            ></time>
-          </li>
+          <li data-testid="currentUTCTime" class="currentUTCTime"></li>
 
-          <li>
-            <data data-testid="myTrack" value="track"
-              >Track: <span>Frontend</span></data
-            >
-          </li>
+          <li data-testid="myTrack">Track: Frontend</li>
 
-          <li>
-            <data data-testid="githubURL">
-              GitHub URL:
-              <a target="_blank" href="https://github.com/dikeogwu1/participant"
-                >https://github.com/yourusername/participant
-              </a></data
-            >
-          </li>
+          <a
+            target="_blank"
+            href="https://github.com/dikeogwu1/participant"
+            data-testid="githubURL"
+            >GitHub URL
+          </a>
         </ul>
       </div>
     </main>
